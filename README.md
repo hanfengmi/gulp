@@ -58,6 +58,6 @@ gulp基于node.js实现
 
     gulp taskname
 
-
+未完。。。。。
 
 转自[原文](http://www.sheyilin.com/2016/02/gulp_introduce/)
