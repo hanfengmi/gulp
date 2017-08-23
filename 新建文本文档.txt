@@ -1,2 +1,19 @@
-git add .
-git commit -m 
+cd aaa     :进到该目录下的aaa文件夹
+
+ll         :查看该文件夹下包含的文件
+
+cd ../     :返回上一层文件夹
+
+git add .  :保存改动文件到本地仓库
+
+git commit -m '注释':保存改动文件到远程仓库
+
+git push origin master :推到git仓库
+
+git diff    :查看本地文件是否有改动
+
+git status  :查看详细变动
+
+git pull origin master :将远程仓库拉到本地
+
+
