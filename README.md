@@ -54,10 +54,29 @@ gulp基于node.js实现
 
 [点这里](http://www.gulpjs.com.cn/docs/api/)
 
-7.使用gulp
+7.gulp方法
+>  1.task   
+> 定义一个任务
+
+    gulp.task('lint',function() {
+        gulp.src('./js/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
+    });
+> jshint会检查js文件有没有报错或者警告
+
+> 2.dest   
+> 被pipe进来后重新输出所有数据，可以被pipe到多个文件夹，如果文件夹不存在会自动创建它
+
+> 3.watch
+> 监视文件，并且可以在文件发生改动时候做一些事情。它总会返回一个 EventEmitter 来发射（emit） change 事件。
+
+8.使用gulp
 
     gulp taskname
 
-未完。。。。。
+
 
 转自[原文](http://www.sheyilin.com/2016/02/gulp_introduce/)
+
+    
